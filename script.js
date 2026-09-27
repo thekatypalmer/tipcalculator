@@ -15,7 +15,7 @@ calculateButton.addEventListener('click', () => {
   }
 
   // TROUBLESHOOTING ISSUE #3 (JavaScript): the percent is used as a whole number instead of a decimal.
-  const tip = bill * tipPercent;
+  const tip = bill * (tipPercent/100);
   const total = bill + tip;
 
   tipAmount.textContent = `$${tip.toFixed(2)}`;
